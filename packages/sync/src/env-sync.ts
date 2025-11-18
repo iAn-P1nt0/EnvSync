@@ -194,7 +194,7 @@ export class EnvironmentSync {
    */
   private async syncEnvVars(
     drifts: Drift[],
-    options: { dryRun?: boolean }
+    _options: { dryRun?: boolean }
   ): Promise<SyncAction[]> {
     const actions: SyncAction[] = [];
 
@@ -310,7 +310,7 @@ export class EnvironmentSync {
    */
   private syncNodeVersion(
     drifts: Drift[],
-    options: { dryRun?: boolean }
+    _options: { dryRun?: boolean }
   ): SyncAction[] {
     const actions: SyncAction[] = [];
 
