@@ -2,7 +2,7 @@
  * GitLab CI integration
  */
 
-import { captureSnapshot, compareSnapshots, deserializeSnapshot } from '@envsync/core';
+import { captureSnapshot, compareSnapshots, deserializeSnapshot } from '@ian-p1nt0/envsync-core';
 import { readFileSync } from 'fs';
 
 export interface GitLabCIOptions {

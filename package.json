@@ -1,5 +1,5 @@
 {
-  "name": "envsync-monorepo",
+  "name": "envsync",
   "version": "0.1.0",
   "private": true,
   "description": "Environment Parity Validator - Eliminate 'works on my machine' failures",
@@ -39,6 +39,6 @@
     "ci-cd",
     "drift-detection"
   ],
-  "author": "EnvSync Team",
+  "author": "Ian Pinto",
   "license": "MIT"
 }

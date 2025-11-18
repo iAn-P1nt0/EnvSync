@@ -5,7 +5,7 @@
 import chalk from 'chalk';
 import Table from 'cli-table3';
 import ora, { type Ora } from 'ora';
-import type { Drift, DriftReport, DriftSeverity, SyncAction } from '@envsync/core';
+import type { Drift, DriftReport, DriftSeverity, SyncAction } from '@ian-p1nt0/envsync-core';
 
 /**
  * Format severity with color

@@ -6,7 +6,7 @@ import Docker from 'dockerode';
 import { readFileSync, existsSync } from 'fs';
 import { glob } from 'glob';
 import { parse as parseYAML } from 'yaml';
-import type { DockerSnapshot, DockerImage, DockerContainer, DockerComposeConfig } from '../types.js';
+import type { DockerSnapshot, DockerComposeConfig } from '../types.js';
 
 /**
  * Capture Docker configuration and state

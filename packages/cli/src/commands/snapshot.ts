@@ -3,7 +3,7 @@
  */
 
 import { writeFileSync } from 'fs';
-import { captureSnapshot, serializeSnapshot } from '@envsync/core';
+import { captureSnapshot, serializeSnapshot } from '@ian-p1nt0/envsync-core';
 import { createSpinner, displaySuccess, displayError } from '../ui.js';
 
 export interface SnapshotCommandOptions {

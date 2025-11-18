@@ -3,7 +3,7 @@
  */
 
 import { writeFileSync } from 'fs';
-import type { DriftReport, Drift } from '@envsync/core';
+import type { DriftReport, Drift } from '@ian-p1nt0/envsync-core';
 
 /**
  * Generate JSON report

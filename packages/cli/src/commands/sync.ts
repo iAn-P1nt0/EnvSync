@@ -4,8 +4,8 @@
 
 import { readFileSync } from 'fs';
 import prompts from 'prompts';
-import { captureSnapshot, deserializeSnapshot, compareSnapshots } from '@envsync/core';
-import { EnvironmentSync } from '@envsync/sync';
+import { captureSnapshot, deserializeSnapshot, compareSnapshots } from '@ian-p1nt0/envsync-core';
+import { EnvironmentSync } from '@ian-p1nt0/envsync-sync';
 import {
   createSpinner,
   displaySyncPlan,

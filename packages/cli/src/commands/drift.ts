@@ -3,7 +3,7 @@
  */
 
 import { readFileSync } from 'fs';
-import { captureSnapshot, deserializeSnapshot, compareSnapshots } from '@envsync/core';
+import { captureSnapshot, deserializeSnapshot, compareSnapshots } from '@ian-p1nt0/envsync-core';
 import { createSpinner, displayDriftSummary, displayDriftDetails, displaySuccess, displayError } from '../ui.js';
 
 export interface DriftCommandOptions {

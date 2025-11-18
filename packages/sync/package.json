@@ -1,7 +1,16 @@
 {
-  "name": "@envsync/sync",
+  "name": "@ian-p1nt0/envsync-sync",
   "version": "0.1.0",
   "description": "EnvSync environment synchronization engine",
+  "author": "Ian Pinto <ian-p1nt0>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipgthb/EnvSync.git",
+    "directory": "packages/sync"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,7 +26,7 @@
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
   },
   "dependencies": {
-    "@envsync/core": "*",
+    "@ian-p1nt0/envsync-core": "^0.1.0",
     "dockerode": "^4.0.2"
   },
   "keywords": [

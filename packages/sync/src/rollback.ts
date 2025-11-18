@@ -4,7 +4,7 @@
 
 import { writeFileSync, readFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import type { EnvironmentSnapshot } from '@envsync/core';
+import type { EnvironmentSnapshot } from '@ian-p1nt0/envsync-core';
 
 /**
  * Rollback point for environment state

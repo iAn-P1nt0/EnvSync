@@ -1,7 +1,16 @@
 {
-  "name": "@envsync/ci-plugin",
+  "name": "@ian-p1nt0/envsync-ci-plugin",
   "version": "0.1.0",
   "description": "EnvSync CI/CD integration plugins",
+  "author": "Ian Pinto <ian-p1nt0>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipgthb/EnvSync.git",
+    "directory": "packages/ci-plugin"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,8 +26,8 @@
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
   },
   "dependencies": {
-    "@envsync/core": "*",
-    "@envsync/sync": "*"
+    "@ian-p1nt0/envsync-core": "^0.1.0",
+    "@ian-p1nt0/envsync-sync": "^0.1.0"
   },
   "keywords": [
     "ci-cd",

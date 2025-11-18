@@ -3,7 +3,7 @@
  */
 
 import { readFileSync } from 'fs';
-import { deserializeSnapshot, compareSnapshots } from '@envsync/core';
+import { deserializeSnapshot, compareSnapshots } from '@ian-p1nt0/envsync-core';
 import { displayDriftSummary, displayDriftDetails, displaySuccess, displayError } from '../ui.js';
 
 export interface CompareCommandOptions {

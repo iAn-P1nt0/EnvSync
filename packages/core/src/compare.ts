@@ -12,7 +12,6 @@ import type {
   Drift,
   DriftSummary,
   DriftSeverity,
-  DriftCategory,
 } from './types.js';
 
 /**
@@ -365,7 +364,7 @@ function assessVersionDrift(
  * Describe version impact
  */
 function describeVersionImpact(
-  pkg: string,
+  _pkg: string,
   local: string,
   remote: string
 ): string {

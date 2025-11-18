@@ -10,7 +10,7 @@ import type {
   SyncOptions,
   SyncResult,
   SyncAction,
-} from '@envsync/core';
+} from '@ian-p1nt0/envsync-core';
 
 const execAsync = promisify(exec);
 
