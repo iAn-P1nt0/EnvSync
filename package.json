@@ -1,0 +1,44 @@
+{
+  "name": "envsync-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Environment Parity Validator - Eliminate 'works on my machine' failures",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "npm run dev --workspaces",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:int": "vitest run --config vitest.integration.config.ts",
+    "test:e2e": "vitest run --config vitest.e2e.config.ts",
+    "clean": "rm -rf packages/*/dist",
+    "lint": "eslint packages --ext .ts",
+    "format": "prettier --write 'packages/**/*.ts'"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2",
+    "vitest": "^1.0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "environment",
+    "validation",
+    "deployment",
+    "devops",
+    "docker",
+    "ci-cd",
+    "drift-detection"
+  ],
+  "author": "EnvSync Team",
+  "license": "MIT"
+}

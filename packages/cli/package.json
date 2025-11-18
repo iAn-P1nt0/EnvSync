@@ -1,0 +1,32 @@
+{
+  "name": "@envsync/cli",
+  "version": "0.1.0",
+  "description": "EnvSync command-line interface",
+  "main": "./dist/index.js",
+  "bin": {
+    "envsync": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs --dts --clean",
+    "dev": "tsup src/index.ts --format cjs --dts --watch"
+  },
+  "dependencies": {
+    "@envsync/core": "workspace:*",
+    "@envsync/sync": "workspace:*",
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.3",
+    "commander": "^11.1.0",
+    "ora": "^7.0.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/cli-table3": "^0.6.3",
+    "@types/prompts": "^2.4.9"
+  },
+  "keywords": [
+    "cli",
+    "environment",
+    "validation"
+  ],
+  "license": "MIT"
+}

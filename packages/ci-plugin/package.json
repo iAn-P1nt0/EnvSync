@@ -1,0 +1,29 @@
+{
+  "name": "@envsync/ci-plugin",
+  "version": "0.1.0",
+  "description": "EnvSync CI/CD integration plugins",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
+  },
+  "dependencies": {
+    "@envsync/core": "workspace:*",
+    "@envsync/sync": "workspace:*"
+  },
+  "keywords": [
+    "ci-cd",
+    "github-actions",
+    "gitlab-ci"
+  ],
+  "license": "MIT"
+}

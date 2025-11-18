@@ -1,0 +1,29 @@
+{
+  "name": "@envsync/sync",
+  "version": "0.1.0",
+  "description": "EnvSync environment synchronization engine",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
+  },
+  "dependencies": {
+    "@envsync/core": "workspace:*",
+    "dockerode": "^4.0.2"
+  },
+  "keywords": [
+    "sync",
+    "environment",
+    "automation"
+  ],
+  "license": "MIT"
+}
