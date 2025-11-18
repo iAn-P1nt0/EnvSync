@@ -26,7 +26,6 @@ export class EnvironmentSync {
     options: SyncOptions = {}
   ): Promise<SyncResult> {
     const {
-      autoFix = false,
       dryRun = false,
       categories,
       maxSeverity,

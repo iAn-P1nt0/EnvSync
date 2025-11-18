@@ -2,7 +2,7 @@
  * Rollback mechanism for environment changes
  */
 
-import { writeFileSync, readFileSync, existsSync } from 'fs';
+import { writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import type { EnvironmentSnapshot } from '@ian-p1nt0/envsync-core';
 
