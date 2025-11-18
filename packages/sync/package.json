@@ -17,7 +17,7 @@
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
   },
   "dependencies": {
-    "@envsync/core": "workspace:*",
+    "@envsync/core": "*",
     "dockerode": "^4.0.2"
   },
   "keywords": [

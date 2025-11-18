@@ -17,8 +17,8 @@
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
   },
   "dependencies": {
-    "@envsync/core": "workspace:*",
-    "@envsync/sync": "workspace:*"
+    "@envsync/core": "*",
+    "@envsync/sync": "*"
   },
   "keywords": [
     "ci-cd",
